@@ -130,13 +130,22 @@
 }
 
 .footer {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   text-align: center;
 }
 
 .footerText {
-  font-size: 0.875rem;
+  font-size: 1.2rem;
   color: #2de2e6;
+
+  a {
+    color: #ffe900;
+    text-decoration: none;
+
+    &:hover {
+      color: white;
+    }
+  }
 }
 
 @keyframes glitch {

@@ -65,7 +65,10 @@ export default function Home() {
       </div>
 
       <div className={styles.footer}>
-        <p className={styles.footerText}>EST. 2025 • MELBOURNE • AUSTRALIA</p>
+        <p className={styles.footerText}>
+          EST. 2025 • MELBOURNE •{" "}
+          <a href="https://docs.silicon.melbourne/">DOCUMENTATION</a>
+        </p>
       </div>
     </div>
   );
