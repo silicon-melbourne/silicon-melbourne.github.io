@@ -1,4 +1,5 @@
 import Image from "next/image";
+import logoImgSrc from "./logo.png";
 import styles from "./page.module.css";
 
 export default function Home() {
@@ -6,7 +7,7 @@ export default function Home() {
     <div className={styles.container}>
       <div className={styles.logoContainer}>
         <Image
-          src="/logo.png"
+          src={logoImgSrc}
           alt="Silicon Melbourne Logo"
           width={300}
           height={300}
