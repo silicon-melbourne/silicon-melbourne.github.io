@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
-import { Geist_Mono } from "next/font/google";
+import { Jersey_10 } from "next/font/google";
 import "./globals.css";
 import styles from "./layout.module.css";
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const titleFont = Jersey_10({
+  variable: "--font-title",
   subsets: ["latin"],
+  weight: "400",
 });
 
 export const metadata: Metadata = {
@@ -20,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistMono.variable} ${styles.body}`}>{children}</body>
+      <body className={`${titleFont.variable} ${styles.body}`}>{children}</body>
     </html>
   );
 }
