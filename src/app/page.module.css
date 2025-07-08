@@ -4,13 +4,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 2rem;
+  padding: 0 2rem;
   background: black;
 }
 
 .logoContainer {
   margin-bottom: 2rem;
-  width: 256px;
+  width: 200px;
 
   img {
     width: 100%;
@@ -22,21 +22,20 @@
   }
 }
 
-.title {
-  font-size: 2.5rem;
-  font-weight: bold;
-  text-align: center;
-  letter-spacing: 0.1em;
-  color: white;
+.logoContainer:hover {
+  animation: glitch 0.3s ease-in-out;
 }
 
-.title:hover {
-  animation: glitch 0.3s ease-in-out;
+.title {
+  font-size: 2.5rem;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  color: white;
 }
 
 @media (min-width: 768px) {
   .title {
-    font-size: 4rem;
+    font-size: 3.2rem;
   }
 }
 
@@ -45,10 +44,7 @@
   text-align: center;
   margin-bottom: 2rem;
   max-width: 42rem;
-  line-height: 1.6;
-  padding: 0 1rem;
   color: #00ffff;
-  text-shadow: 1px 1px 0px #000000;
 }
 
 @media (min-width: 768px) {
@@ -66,20 +62,17 @@
 }
 
 .discordButton {
-  background: linear-gradient(90deg, #5865f2 0%, #4752c4 100%);
+  background: linear-gradient(90deg, #6571fb 0%, #3a45c1 100%);
   border: 3px solid #2de2e6;
   color: #ffffff;
-  padding: 1rem 1.5rem;
-  font-size: 1.325rem;
-  font-weight: bold;
+  padding: 1rem;
+  font-size: 1.5rem;
   text-align: center;
   text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 0.125em;
+  letter-spacing: 0.1rem;
   box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
   transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
+  text-shadow: 0 1px #000000;
 }
 
 .discordButton:hover {
@@ -97,20 +90,21 @@
 .socialButton {
   border: 2px solid #ed6db5;
   color: #ffffff;
-  padding: 0.75rem;
-  font-size: 1rem;
-  font-weight: bold;
+  padding: 0.5rem;
+  font-size: 1.2rem;
   text-align: center;
   text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 0.0625em;
+  letter-spacing: 0.1rem;
   box-shadow: 0 0 15px rgba(255, 0, 170, 0.3);
   transition: all 0.3s ease;
+  text-shadow: 0 1px #000000;
+
+  position: relative;
 }
 
 .socialButton:hover {
   transform: translateY(-2px);
-  box-shadow: 0 0 25px rgba(255, 0, 170, 0.6);
+  box-shadow: 0 0 25px #ff00aa99;
 }
 
 .linkedinButton {
@@ -132,9 +126,10 @@
 .footer {
   margin-top: 1.5rem;
   text-align: center;
+  letter-spacing: 0.1rem;
 }
 
-.footerText {
+.footerText, .shareText {
   font-size: 1.2rem;
   color: #2de2e6;
 
@@ -145,6 +140,13 @@
     &:hover {
       color: white;
     }
+  }
+}
+
+.shareText {
+  margin-bottom: 1rem;
+  a {
+    color: #ed6db5;
   }
 }
 

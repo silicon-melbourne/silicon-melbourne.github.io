@@ -9,8 +9,8 @@ export default function Home() {
         <Image
           src={logoImgSrc}
           alt="Silicon Melbourne Logo"
-          width={300}
-          height={300}
+          width={256}
+          height={256}
           className={styles.logo}
         />
       </div>
@@ -65,6 +65,29 @@ export default function Home() {
       </div>
 
       <div className={styles.footer}>
+        <p className={styles.shareText}>
+          SHARE:{" "}
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/feed/?shareActive&text=I joined %23SiliconMelbourne. A community by and for those working in %23Technology in %23Melbourne and Victoria. Join me and many others in creating a vibrant, connected, and resilient local technology community: https://silicon.melbourne/"
+          >
+            LINKEDIN
+          </a>
+          {" • "}
+          <a
+            target="_blank"
+            href="https://x.com/intent/post?url=https%3A%2F%2Fsilicon.melbourne%2F&text=I%20joined%20%23SiliconMelbourne.%20A%20community%20by%20and%20for%20those%20working%20in%20%23Technology%20in%20%23Melbourne%20and%20Victoria.%20Join%20me%20and%20many%20others%20in%20creating%20a%20vibrant%2C%20connected%2C%20and%20resilient%20local%20technology%20community&via="
+          >
+            X
+          </a>
+          {" • "}
+          <a
+            target="_blank"
+            href="https://bsky.app/intent/compose?text=I%20joined%20%23SiliconMelbourne.%20A%20community%20by%20and%20for%20those%20working%20in%20%23Technology%20in%20%23Melbourne%20and%20Victoria.%20Join%20me%20and%20many%20others%20in%20creating%20a%20vibrant%2C%20connected%2C%20and%20resilient%20local%20technology%20community%3A%20https://silicon.melbourne/&via="
+          >
+            BLUESKY
+          </a>
+        </p>
         <p className={styles.footerText}>
           EST. 2025 • MELBOURNE •{" "}
           <a href="https://docs.silicon.melbourne/">DOCUMENTATION</a>
