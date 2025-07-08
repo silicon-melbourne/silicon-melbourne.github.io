@@ -12,6 +12,7 @@ const titleFont = Jersey_10({
 export const metadata: Metadata = {
   title: "Silicon Melbourne",
   description: "Connecting the Melbourne Technology Community",
+  metadataBase: new URL("https://silicon.melbourne/"),
 };
 
 export default function RootLayout({
